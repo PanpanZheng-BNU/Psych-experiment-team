@@ -1,0 +1,13 @@
+clc;clear;close all;
+hFigure = figure(1);
+set(hFigure, 'position',[200 200 600 400]);
+hAxes = axes('parent',hFigure);
+set(hAxes, 'units','pixels', 'position',[1 1 600 400]);
+imgMatrix = ones(400,600,3);
+imgMatrix(:,1:180,1) = 0;
+imgMatrix(:,1:180,2) = 0;
+imgMatrix(:,1:180,3) = 1;
+imgMatrix(:,379:600,1) = 1;
+imgMatrix(:,379:600,2) = 0;
+imgMatrix(:,379:600,3) = 0;
+imshow(imgMatrix,'parent',hAxes);
