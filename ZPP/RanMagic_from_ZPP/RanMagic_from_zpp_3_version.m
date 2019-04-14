@@ -4,7 +4,7 @@ function Y=RanMagic_from_zpp_3_version(n)
 c=magic(n);
 %用和元胞数组相同的方式，将8个魔方矩阵放入结构体s中；
 for ii=1:8;
-    if ii>4
+    if ii==5
         c=c';
     end
     c=rot90(c);

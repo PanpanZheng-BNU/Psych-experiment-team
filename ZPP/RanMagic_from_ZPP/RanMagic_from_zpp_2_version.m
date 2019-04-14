@@ -6,7 +6,7 @@ a=cell(8,1);
 c=magic(n);
 %通过for循环，将魔方矩阵的8种情况的矩阵作为元胞数组a的元素，放入元胞数组a中；
 for ii=1:8;
-    if ii>4
+    if ii==5
         c=c';
     end
     c=rot90(c);
