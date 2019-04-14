@@ -1,5 +1,5 @@
 %定义函数RanMagic_from_zpp，函数自变量为n，因变量为Y；
-function Y=RanMagic_from_zpp(n);
+function Y=RanMagic_from_zpp_1_version(n);
 %让因变量Y为n阶魔方矩阵
 Y=magic(n);
 %1/2的概率决定Y是否转置；(randn:生成服从标准正态分布的随机数)
